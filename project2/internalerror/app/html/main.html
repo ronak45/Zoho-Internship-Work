@@ -1,0 +1,134 @@
+<!-- <html>
+	<head>
+	  <link rel="stylesheet" href="../css/style.css">
+	  <script src="../js/lib/ZohoEmbededAppSDK.min.js"></script>
+	  <script src="../js/custom.js"></script>
+	</head>
+	<body>
+		<div class="topband">
+			Hello World - Api Responses
+		</div>
+		<div class="blockQuote">
+			<p class="title">Housing Info</p>
+			<textarea id="HousingInfo" contentEditable>
+			</textarea>
+		</div>
+		<div class="blockQuote">
+		<p class="title">Records Info</p>
+			<textarea id="recordInfo" contentEditable>		
+			</textarea>
+		</div>
+		</div>
+		<div class="blockQuote">
+		<p class="title">Basic Info</p>
+		<textarea id="BasicInfo" contentEditable>		
+		</textarea>
+		</div>
+	</body>
+</html> -->
+
+<html>
+  <head>
+	  <title>
+	
+		  Enter your house
+	  </title>
+    <meta charset="UTF-8">
+	  <link rel="stylesheet" href="../css/style.css">
+	  <script src="../js/lib/ZohoEmbededAppSDK.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  
+	  <!-- script src="../js/custom.js"></script -->
+	  <script src="../js/Util.js"></script>
+	</head>
+	<script>
+		$(document).ready(function(){
+		ZOHO.embeddedApp.init();
+		//alert("Ready");	
+		});
+	</script>
+	<body>
+		<p align = "center"> <font size = 10 color = "black"> Look up your house information </font>
+	
+	<form>
+		Address:<br>
+		<input type="text" id="addressId" name="Address"><br>
+		City:<br>
+		<input type="text" id="cityId" name="city"><br>
+		State:<br>
+		<input type="text" id="stateId" name="State"><br>
+		Zipcode:<br>
+		<input type="text" id="zipcodeId" name="Zipcode" ><br>
+	</form>
+	Search your future home: <input type="submit" value="Submit" onclick="Util.saveButtonAction()">
+	
+	<p align = "center">
+		<font size = 8 color = "black"> Summary </font>
+		<br/>
+		<img src = "house.jpg" alt = "hPic">
+		<br/>
+		<textarea id="summary"  contentEditable>		
+			</textarea>
+	</p>
+
+	
+	<p align = "center"> <font size = 6 color = "black"> House Details </font>
+	</p>
+		</div>
+
+		<div class = "blockquote_container">
+
+
+
+
+		<div class="blockQuote" >
+			<p>Total Size</p>
+			<textarea id="totalSize"  contentEditable>		
+			</textarea>
+		</div>
+		<div class = "blockQuote">
+			<p> Lot Size
+			</p>
+			<textarea id = "lotSize"></textarea>
+		</div>
+		<div class = "blockQuote">
+			<p># of Bath and Bedrooms
+			</p>
+			<textarea id = "rooms" ></textarea>
+		</div>
+	</div>
+
+
+		<br/>
+		<p align = "center"> <font size = 6 color = "black"> House Value </font>
+		<div class = "blockquote_container">
+		
+			<div class="blockQ">
+					<p>Housing Value:</p>
+					<textarea id="houseValue" contentEditable>		
+					</textarea>
+				</div>
+
+				<div class="blockQ">
+						<p>1 Year Price Forecast</p>
+						<textarea id="forecast" contentEditable>		
+						</textarea>
+					</div>
+				<div class="blockQ">
+						<p>Date Last Sold</p>
+						<textarea id="date" contentEditable>		
+						</textarea>
+					</div>
+
+			</div>
+		</style>
+			<!-- //p.dashed {border-style: dashed;} -->
+		</style>
+	<!-- <textarea rows = "2" cols = "2">
+				This is a test to see how text turns out here.
+				
+	</textarea> -->
+	</body>
+</html>
+
+
